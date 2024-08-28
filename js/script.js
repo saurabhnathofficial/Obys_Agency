@@ -105,20 +105,51 @@ function hoverEffact() {
     });
 }
 
-// let section = document.querySelector("#video_container");
+function section() {
 
-// section.addEventListener("mousemove",function(d){
-//     gsap.to("#video_container .play",{
-//         left:d.x,
-//         top:d.y,
-//     })
-// })
+    let section = document.querySelector("#page1 .video_container");
 
-// figure.addEventListener("mouseleave",function(d){
-//     gsap.to("#video_container .play",{
-    
-//     })
-// })
+    section.addEventListener("mousemove", function (d) {
+        gsap.to(".video_container .play", {
+            left: d.x - "440",
+            top: d.y - "285",
+        })
+    })
+    section.addEventListener("mouseleave", function (d) {
+        gsap.to(".video_container .play", {
+            left: "50%",
+            top: "50%",
+
+        })
+    })
+
+}
+
+let slide1 = document.querySelectorAll(".marque_text .row .slide");
+let slide2 = document.querySelectorAll(".marque_text .row .slide2");
+
+slide1.forEach(function(e){
+    gsap.to(e,{
+        transform: "translateX(0%)",
+        duration:8,
+        scrollTrigger:{
+            trigger: ".marque_text",
+            scroller: "body",
+            scrub:3
+        }
+    })
+})
+slide2.forEach(function(e){
+    gsap.to(e,{
+        transform: "translateX(0%)",
+        duration:10,
+        scrollTrigger:{
+            trigger: ".marque_text",
+            scroller: "body",
+            scrub:3
+        }
+    })
+})
 
 
 
@@ -134,9 +165,9 @@ function hoverEffact() {
 
 
 
-
-cursor();
-loadingAnimation();
-makeMagnet();
-hoverEffact();
-small_scroll();
+// cursor();
+// loadingAnimation();
+// makeMagnet();
+// hoverEffact();
+// small_scroll();
+// section();
