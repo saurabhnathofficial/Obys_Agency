@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obys Agency</title>
   <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -14,7 +16,7 @@
 <body>
   <div id="cursor"></div>
 
-  <!-- <div id="loader">
+  <div id="loader">
 
     <div class="line">
       <div class="line_item">
@@ -33,7 +35,7 @@
     <div class="line">
       <h6>Please wait <br> a few seconds...</h6>
     </div>
-  </div>   -->
+  </div>
 
 
   <div id="main">
@@ -138,6 +140,23 @@
       </div>
     </div>
 
+    <div id="anime_container">
+      <div id="anime">
+        <div class="top">
+          <h2>olga prudka</h2>
+        </div>
+
+        <figure>
+          <img class="c1" src="./assets/img1-1.jpg" alt="">
+          <img class="c2" src="./assets/img1-2.jpg" alt="">
+        </figure>
+
+        <div class="bottom">
+          <h4>logo design, website design, development</h4>
+          <h4>2023</h4>
+        </div>
+      </div>
+    </div>
     <!-- end of page1 -->
     <div id="about">
       <div class="header">
@@ -200,7 +219,6 @@
       </div>
       <div class="marque_text">
         <div class="row">
-          <!-- <marquee behavior="scroll" loop="-1" direction="right"> -->
           <div class="slide">
             <span>sports - </span>
             <span>fashion - </span>
@@ -208,11 +226,8 @@
             <span>sports - </span>
             <span>fashion - <span>
                 <span>technology - </span>
-                <!-- <span>sports - </span>
-          <span>fashion - <span>
-          <span>technology - </span>  -->
           </div>
-        <!-- </marquee> -->
+          <!-- </marquee> -->
         </div>
         <div class="row">
           <div class="slide2">
@@ -286,8 +301,14 @@
         <h4>&copy;obys-Agency 2024</h4>
       </div>
     </div>
+
+
   </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -296,7 +317,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> -->
+
+  <!-- Three.js is needed for 3d Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+  <!-- ControlKit is needed for Debug Panel -->
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
   <script src="./js/script.js"></script>
   <script>
 
